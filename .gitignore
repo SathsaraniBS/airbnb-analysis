@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# Data files (too large for GitHub)
+data/*.gz
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
