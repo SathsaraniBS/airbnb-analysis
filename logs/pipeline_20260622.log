@@ -24,3 +24,29 @@
 2026-06-22 01:45:50 | INFO     | __main__ | PIPELINE RUN COMPLETE | city=bangkok | elapsed=43.1s
 2026-06-22 01:45:50 | INFO     | __main__ | Outputs written to: D:\airbnb-analysis\data\processed
 2026-06-22 01:45:50 | INFO     | __main__ | ============================================================
+2026-06-22 20:35:28 | INFO     | __main__ | ============================================================
+2026-06-22 20:35:28 | INFO     | __main__ | PIPELINE RUN START | city=bangkok
+2026-06-22 20:35:28 | INFO     | __main__ | ============================================================
+2026-06-22 20:35:28 | INFO     | src.ingest | Starting ingestion for city=bangkok (Bangkok, Thailand)
+2026-06-22 20:35:28 | INFO     | src.ingest | Loaded listings_summary: 28806 rows
+2026-06-22 20:35:29 | INFO     | src.ingest | Loaded listings_detailed: 28806 rows
+2026-06-22 20:35:29 | INFO     | src.ingest | Loaded neighbourhoods: 50 rows
+2026-06-22 20:35:33 | INFO     | src.ingest | Loaded reviews: 583333 rows
+2026-06-22 20:35:33 | INFO     | src.ingest | Generated data quality report: 104 column-level rows
+2026-06-22 20:35:33 | INFO     | src.cleaning | Cleaning listings_detailed: 28806 rows in
+2026-06-22 20:35:34 | INFO     | src.cleaning | Validation: 0 / 28806 rows flagged (not dropped) for review
+2026-06-22 20:35:34 | INFO     | src.cleaning | Duplicate check: 0 exact id duplicates, 244 fuzzy (name+host+geo) duplicates
+2026-06-22 20:35:34 | INFO     | src.cleaning | Cleaning listings_detailed: 28806 rows out (no rows dropped, issues flagged in validation_flags column)
+2026-06-22 20:35:34 | INFO     | src.enrichment | Summarized reviews for 18716 listings
+2026-06-22 20:35:34 | INFO     | src.enrichment | Derived calculated fields: host_tenure_years, review_frequency_derived, price_per_bedroom
+2026-06-22 20:35:34 | INFO     | src.enrichment | Computed neighbourhood aggregates for 50 neighbourhoods
+2026-06-22 20:35:34 | INFO     | src.enrichment | Built enriched master table: 28806 rows, 92 columns
+2026-06-22 20:35:34 | INFO     | src.star_schema | dim_host: 8874 unique hosts
+2026-06-22 20:35:34 | INFO     | src.star_schema | dim_neighbourhood: 50 unique neighbourhoods
+2026-06-22 20:35:34 | INFO     | src.star_schema | dim_room_type: 85 unique room/property type combinations
+2026-06-22 20:35:34 | INFO     | src.star_schema | fact_listing: 28806 rows, 17 columns
+2026-06-22 20:35:35 | INFO     | src.star_schema | Star schema loaded into DuckDB at D:\airbnb-analysis\data\processed\airbnb.duckdb
+2026-06-22 20:35:35 | INFO     | __main__ | ============================================================
+2026-06-22 20:35:35 | INFO     | __main__ | PIPELINE RUN COMPLETE | city=bangkok | elapsed=6.4s
+2026-06-22 20:35:35 | INFO     | __main__ | Outputs written to: D:\airbnb-analysis\data\processed
+2026-06-22 20:35:35 | INFO     | __main__ | ============================================================
