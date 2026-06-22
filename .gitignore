@@ -14,3 +14,7 @@ __pycache__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Pipeline outputs (regenerated on every run - not source code)
+data/processed/
+logs/
